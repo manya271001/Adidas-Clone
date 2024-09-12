@@ -327,4 +327,76 @@ background-image: url("img/3rd image.png");
     background-color: #fff;
     color: black;
 }
-
+/* story */
+.story{
+    margin-top: 40px;
+}
+.story img{
+    width: 100%;
+    height: 100%;
+}
+/* discount */
+.discount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    background-color: rgb(238, 238, 15);
+    color: black;
+    height: 100px;
+    font-size: 25px;
+}
+.discount a{
+    padding: 10px 15px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.discount a:hover{
+    color: wheat;
+}
+.discount a i{
+    font-size: 15px;
+    margin-left: 10px;
+}
+/* FOOTER SECTION */
+.footer{
+    display: flex; gap: 60px;
+    margin-left: 70px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+.footer .list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer .list a{
+    color: black;
+    text-decoration: none;
+}
+.footer .list a:hover{
+    border-bottom: 1px solid black;
+}
+footer .top{
+    display: flex;
+    color: #ebf4f4;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+footer .top a{
+    text-decoration: none;
+    color: white;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(57, 57, 57);
+    color: white; 
+    font-size: small;
+}
