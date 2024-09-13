@@ -42,23 +42,25 @@ body {
 
 .navbar .logo .logo-img img {
     width: 50px;
-    margin-left: -390px;
+    margin-left: -230px;
+    display: block;
     height: 50px;
 }
-
-.navbar .menu{
+ .menu ul{
 
     display: flex;
     gap: 30px;
     justify-content: center;
     align-items: center;
+    list-style: none;
 }
-.navbar .menu a{
+.menu ul li a{
     text-decoration: none;
     color: #000;
 }
-.navbar .user-menu {
-    display: flex; 
+.navbar .user-menu ul{
+    display: flex;
+    list-style: none; 
     gap: 30px;
 }
 .navbar .user-menu .search{
@@ -164,15 +166,50 @@ body {
     font-family: 'Times New Roman', Times, serif;
  }
  /* extra image section */
- .image{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
+ .extra-images .image1{
+    background-image: url("img/bac.png");
+     height: 200px;
+     width: 100%;
+     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-top: 50px;
+}
+ .image1 .btn{
+    padding-top: 150px;
+    padding-left: 520px;
  }
-.image img{
-    
-    width: 100%;}
+  .image1 .btn a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px 40px;
+  }
+   .image1 .btn a:hover{
+    color: grey;
+   }
+  .extra-images .image2{
+    background-image: url("img/background3.png");
+     height: 500px;
+     width: 100%;
+     background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-top: 50px;
+}
+.extra-images .image2 .btn{
+    padding-top: 440px;
+    padding-left: 30px;
+}
+.extra-images .image2 .btn a{
+     text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 20px 60px;
+}
+.image2 .btn a:hover{
+    color: grey;
+   }
   /* 2nd card section */
   .cardSection2 .card-section{
     margin-top: 50px;
@@ -399,4 +436,165 @@ footer{
     background-color: rgb(57, 57, 57);
     color: white; 
     font-size: small;
+}
+#checked{
+    display: none;
+
+}
+label{
+    display: none;
+}
+@media screen and (max-width:768px){
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: -130px;
+        width: 100%;
+    } 
+    .menu ul li{
+         text-align: center;
+    }
+    .navbar .user-menu ul{
+       display: none;
+    }
+    .navbar .account{
+       display: none;
+    }
+    .navbar .logo .logo-img img {
+    width: 50px;
+     margin-left:-430px;
+    display: block;
+    height: 50px;
+}
+    .hero{
+        width: 100%;
+    }
+    .adiclub .car-section{ 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+     .image1 .btn{
+    padding-top: 140px;
+    padding-left: 280px;
+    }
+    .extra-images .image2 .btn{
+    padding-top: 420px;
+    padding-left: 0px;
+}
+
+    .cardSection2 .card-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .shoes .shoes-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .popular .shoes-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .third-image{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:426px){
+    .top-bar{
+        width: 540px;
+    }
+    .promo-bar{
+        width: 510px;
+    }
+     .navbar .logo{
+    display: flex; 
+    }
+  .navbar .logo .logo-img img {
+    width: 50px;
+     margin-left:-280px;
+    display: block;
+    height: 50px;
+}
+     .menu ul{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: -140px;
+        width: 100%;
+    } 
+    .menu ul li{
+         text-align: center;
+    }
+    .navbar .user-menu ul{
+       display: none;
+    }
+    .navbar .account{
+       display: none;
+    }
+     .hero{
+        width: 540px;
+    }
+    .adiclub .car-section{ 
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 30px;
+    }
+    .extra-images .image1 {
+        width: 540px;
+    }
+
+     .image1 .btn{
+    padding-top: 140px;
+    padding-left: 180px;
+    }
+    .extra-images .image2{
+        width: 540px;
+    }
+    .extra-images .image2 .btn{
+    padding-top: 420px;
+    padding-left: 0px;
+}
+    .cardSection2 .card-section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .shoes .shoes-card{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .popular .shoes-card{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+    .third-image{
+        width: 540px;
+    }
+    .story{
+        width: 540px;
+    }
+    .discount{
+        width: 540px;
+    }
+    footer{
+        width: 540px;
+    }
+    .image{
+        width: 500px;
+    }
+   
 }

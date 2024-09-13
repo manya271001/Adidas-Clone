@@ -8,6 +8,7 @@
     <title>adidas official website India</title>
 </head>
 <body> 
+    <input type="checkbox" name="" id="checked">
     <!-- Navbar section -->
     <section class="navbarr">
     <div class="top-bar">
@@ -24,26 +25,26 @@
             <div class="logo-img">
             <img src="img/logo.png" alt="Brand Logo">
         </div>
+        
         <div class="menu">
-           <h4> <a href="#">Men</a></h4>
-            <h4><a href="#">Women</a></h4>
-            <h4><a href="#">Kids</a></h4>
-            <a href="#">Sports</a>
-            <a href="#">Lifestyle</a>
-           <h4><a href="#">Sale</a></h4>
+            <ul>
+          <li> <h4> <a href="#">Men</a></h4></li>
+            <li><h4><a href="#">Women</a></h4></li>
+            <li><h4><a href="#">Kids</a></h4></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Lifestyle</a></li>
+           <li><h4><a href="#">Sale</a></h4></li>
+           </ul>
         </div>
         <div class="user-menu">
-            <input type="text" id="search" placeholder="search">
-            <div>
-                <i class="fa-solid fa-user" style="color: #010813;"></i>
+            <ul>
+                <li><input type="text" id="search" placeholder="search"></li>
+                <li> <i class="fa-solid fa-user" style="color: #010813;"></i></li>
+                <li>  <i class="fa-solid fa-heart" style="color: #010813;"></i></li>
+                <li> <i class="fa-solid fa-cart-shopping" style="color: #000714;"></i></li>
+            </ul>
             </div>
-            <div>
-                <i class="fa-solid fa-heart" style="color: #010813;"></i>
-            </div>
-            <div>
-                <i class="fa-solid fa-cart-shopping" style="color: #000714;"></i>
-            </div>
-        </div>
+           <label for="checked"><i class="fa-solid fa-bars" style="color: #010813;"></i></label>
         </div>
     </nav>
     <div class="promo-bar">
@@ -100,14 +101,19 @@
         </div>
     </section>
     <!-- extra image section -->
-    <section class="image">
-        <div>
-            <img src="img/bac.png" alt="">
+    <section class="extra-images">
+    <div class="image1">
+        <div class="btn">
+            <a href="#">download the app &nbsp;<i class="fa-solid fa-arrow-right" style="color: black;"></i></a>
         </div>
-        <div>
-            <img src="img/background3.png" alt="">
+    </div>
+        <div class="image2">
+            <div class="btn">
+                <a href="#">Shop Sportswear &nbsp;<i class="fa-solid fa-arrow-right" style="color: black;"></i></a>
+            </div>
         </div>
-    </section>
+        </section>
+    
 <!-- 2nd card section -->
 <section class="cardSection2">
       <h3>Select your sport, find your gear, and Get in the game!</h3>
